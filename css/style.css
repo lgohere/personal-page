@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "HighSpirited";
+  src: url(../fonts/HighSpirited.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Tenby_Five";
+  src: url(../fonts/tenby-five.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Dorado_Headline";
+  src: url(../fonts/DoradoHeadline.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Headson";
+  src: url(../fonts/Headson.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelloJucky";
+  src: url(../fonts/HELLOJUCKY.otf) format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------- font top welcome -------------- */
+
+.ft-1 {
+  color: white;
+  filter: drop-shadow 1px -1px 15px rgb(24, 20, 1);
+  filter: drop-shadow(0px 0px 1px #33220e);
+  text-shadow: 0.05em 0.04em 0.06em #130a00;
+  font-family: HelloJucky;
+}
+
+.two {
+  position: relative;
+  color: #de996d;
+  font-weight: 100;
+}
+
+.ft-welcome {
+  font-family: Headson;
+  color: #fbfbfb;
+  text-shadow: 0em 0em 0.05em hsl(231deg 100% 4%);
+}
+
+.luizgouveia {
+  font-size: 66pt;
+  text-shadow: 1px 2px 0px #000000;
+  color: rgb(255 215 157);
+  font-family: HighSpirited;
+  word-spacing: -15pt;
+  font-weight: 500;
+  position: relative;
+  top: -5vh;
+}
+
+.fundo-1 {
+  background-image: url(/img/gold3.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.facepic {
+  position: relative;
+  filter: drop-shadow(0px 0px 11px black);
+}
+
+.cave {
+  position: relative;
+  filter: drop-shadow(0px 1px 5px black);
+  background-color: black;
+  height: 9px;
+  width: 100%;
+}
+/* -------------- font top welcome end -------------- */
+
+/* ------------- font infos about me ------------- */
+
+.fundo2 {
+  background-image: url(/img/background2-3.jpeg);
+  padding-bottom: 15vh;
+}
+
+.ft-topic {
+  font-size: 24px;
+  font-family: Dorado_Headline;
+  color: goldenrod;
+  font-weight: bold;
+  text-shadow: 1px 2px #0021ff;
+}
+
+p {
+  font-size: 15pt;
+  font-family: Tenby_five;
+  color: #f6ff6b;
+  line-height: 50px;
+  text-shadow: 2.2px 2px 1px #001ff5;
+  font-family: Tenby_five;
+  letter-spacing: 0.9px;
+  border-radius: 40px;
+  text-align: justify;
+}
+
+.fundotexto {
+  border: 0.01px solid #b1893436;
+  border-radius: 40px;
+  background-color: #00010ada;
+}
+
+/* ------------- font infos about me end------------- */
+
+/* ------------- effects ------------- */
+
+.fade-in {
+  -webkit-animation: fade-in 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  animation: fade-in 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: fade-out 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
