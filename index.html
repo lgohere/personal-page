@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body class="">
-    <div class="container-fluid fundo-1 pt-4 pb-4" >
+    <div id="blackout" class="container-fluid fundo1 pt-4 pb-4" >
       <div class="row">
         <div class="col-12 text-center">
           <h1 class="display-4">
@@ -34,37 +34,40 @@
         </div>
       </div>
       <div class="row text-center justify-content-center">
-        <div class="col-12 col-md-10">
-          <h2><span class="ft-1">It’s such a great honor for me to welcome you on my website. </span>
-          </h2>
+        <div class="col-12 col-sm-10">
+          <h3><span class="ft-1">It’s such a great honor for me to welcome you on my website. </span>
+          </h3>
           <br>
-          <h2><span class="ft-1 two">Here you’ll find informations about me as well as my work as
+          <h3><span class="ft-1 two">Here you’ll find informations about me as well as my work as
             developer.</span>
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
-    <div class="container two-cols-820" style="display: none">
-      <div class="row mt-4 mb-4">
-        <div class="col-6 bg-black d-flex flex-column">
-         <h1><span class="ft-xlarge">Welcome <span class="ft-large">E</span>veryone!</h1>
-            <h2 class="bordao2">
-          It’s such a great honor for me to welcome you on my website.
-            </h2>
-             <h2 class="bordao3">
-          Here you’ll find informations about me as well as my work as developer.
+
+    <!-------------  WIDE SCREEN TOP --------->
+
+
+    <div id="show-ct" class="container-fluid p-lg-5 fundo1-b pt-5 pb-5" >
+      <div class="row" >
+        <div class="col-6 text-center d-flex flex-column justify-content-around align-items-end pl-5">
+         <h1 class="ft-welcome display-2">Welcome Everyone!</h1>
+         <section id="text-wide">
+          <h2><span class="ft-1">It’s such a great honor for me to welcome you on my website. </span>
+          </h2>
+          <br>
+          <h2><span class="ft-1 ft-1-b two ">Here you’ll find informations about me as well as my work as
+           developer.</span>
            </h2>
+        </section>
+
        </div>
-        <div class="col-6 bg-white pt-5 d-flex flex-column align-items-center">
-       <img
-        src="img/profile-pic.png"
-        alt="Foto do Luiz"
-        width="100"
-        class="facepic2"
-      />
-          <h2 class="bordao1">I'm</h2>
+        <div class="col-6  align-items-center text-center d-flex flex-column">
+          <img id="facepic" src="img/profile-pic.png" alt="Foto do Luiz" class="img-fluid"/>
+          <h2 class="ft-1">I'm</h2>
+          <br>
           <p class="luizgouveia">Luiz Gouveia</p>
-       </div>
+        </div>
      </div>
     </div>
     
@@ -74,13 +77,18 @@
         </div>
     </div>
     
+
+    <!---------------------------- INFOS  ---------------------------->
+
+
+
     <div class="container-fluid pt-3 fundo2 text-center align-content-center" id="box">
       <div class="row py-5">
-        <div class=" col-12">
+        <div class=" col-12 pt-5 pb-3">
           <h3><span class="ft-topic">Who’s Luiz Gouveia?</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-0">
+      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
         <div class="col-12">
           <img src="./img/sunset.png" alt="santos" width="50" class="float-left mx-3 mt-4">
           <p>
@@ -91,27 +99,27 @@
           </p>
         </div>
       </div>
-      <button id="boxBtn" class="btn btn-dark float-right mt-3 px-3">></button>
+      <!-- <button id="boxBtn" class="btn btn-dark float-right mt-3 px-3">></button>
     </div>
     <div class="container-fluid">
       <div class="row">
-          <img src="/img/cave.png" alt="cave-line" class="cave" />
+          <img src="./img/cave.png" alt="cave-line" class="cave" />
           </div>
-    </div> 
+    </div>  -->
       
     <div class="container-fluid py-3 fundo2 text-center align-content-center">
       <div class="row py-5">
-        <div class=" col-12">
+        <div class=" col-12 pt-5 pb-3">
           <h3><span class="ft-topic">From Law to Programming</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-0">
-        <div class="col-12">
+      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
+        <div class="col-12 text-center">
           <p>
             Having attended 3 years in law studies, Luiz was rewarded with a
             scholarship due to his grades and performance along the course.
-          </br>
           </p>
+          <span class="d-flex"><img src="./img/scholarship.png" class="mx-auto my-3 mb-5" width="60"></span>
           <p>
             Later on, coming across the evident lack of job oportunites in the
             sector as well as high number of graduated people who are
@@ -122,17 +130,21 @@
 
 
       <div class="row py-5">
-        <div class=" col-12">
+        <div class=" col-12 pt-5 pb-3">
           <h3><span class="ft-topic">Goals playing as Front End Developer</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-0">
+      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
         <div class="col-12">
           <p>
-            Luiz has a clear goal, aims to achieve a developer full-stack's
-            skill level. Has been working on this through hand-on, daily.
-        </br>
+            Luiz has a clear goal... 
+            <br>
+            Aims to achieve a developer full-stack's
+            skill level. 
+            Has been working on this through hand-on, daily.
           </p>
+          <span class="d-flex"><img src="./img/full-stack.png" class="mx-auto my-3 mb-5" width="70"></span>
+        
           <p>
             His main focus is on generating value to borrower services through
             his hard and soft skills. Althought considering himself an eternal
@@ -140,8 +152,9 @@
             aggregate energy to projects in which will be part of, a fact that
             keeps his mindset opened and adjustable for new orientations and
             teachings.
-          </br>
           </p>
+          <span class="d-flex"><img src="./img/financial-profit.png" class="mx-auto my-3 mb-5" width="70"></span>
+        
           <p>
             Believes in his own potential, however knows that only facing real
             challenges and delivering positives results from them will be able
@@ -153,12 +166,12 @@
       
       
       <div class="row py-5">
-        <div class=" col-12">
+        <div class=" col-12 pt-5 pb-3">
           <h3><span class="ft-topic">Get in Touch!</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-0">
-        <div class="col-12">
+      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
+        <div class="col-12 d-flex justify-content-center">
           <p>
             📧 lgou90@gmail.com
         </br>
@@ -169,14 +182,14 @@
       
       
       <div class="row py-5">
-        <div class=" col-12">
+        <div class=" col-12 pt-5 pb-3">
           <h3><span class="ft-topic">Portfolio</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-0">
+      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
         <div class="col-12">
-          <p>...
-          </p>
+          <a href="http://github.com/lgohere"><span class="d-flex"><img src="./img/github.png" class="mx-auto my-3 mb-3" width="100"></span></a>
+          <p class="text-center">Click on the icon above to acess my Github page!</p>
         </div>
       </div>
 

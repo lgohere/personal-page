@@ -27,6 +27,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#show-ct {
+  display: none;
+}
+
 /* -------------- font top welcome -------------- */
 
 .ft-1 {
@@ -60,8 +64,14 @@ html {
   top: -5vh;
 }
 
-.fundo-1 {
+.fundo1 {
   background-image: url(../img/bg-top-mobile.png);
+  background-size: cover;
+  position: relative;
+}
+
+.fundo1-b {
+  background-image: url(../img/gold.jpg);
   background-size: cover;
   position: relative;
 }
@@ -96,7 +106,7 @@ html {
 }
 
 p {
-  font-size: 15pt;
+  font-size: 13pt;
   font-family: Tenby_five;
   color: #f6ff6b;
   line-height: 50px;
@@ -158,5 +168,79 @@ p {
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 720px) {
+  #blackout {
+    display: none;
+  }
+
+  #facepic {
+    max-width: 90%;
+  }
+
+  #show-ct {
+    display: block;
+  }
+
+  .luizgouveia {
+    word-spacing: -18pt;
+    top: -1vh;
+  }
+
+  .ft-1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 13pt;
+  }
+}
+
+@media (min-width: 895px) {
+  .ft-1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #facepic {
+    max-width: 70%;
+  }
+
+  .ft-1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1210px) {
+  #text-wide {
+    max-width: 60vh;
+  }
+
+  .ft-welcome-lg {
+    font-size: 5rem;
+  }
+
+  .ft-1 {
+    font-size: 2.8rem;
+  }
+
+  #facepic {
+    max-width: 50%;
+  }
+
+  .luizgouveia {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #text-wide {
+    margin-bottom: 2vh;
+    position: relative;
   }
 }
