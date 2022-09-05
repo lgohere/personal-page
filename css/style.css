@@ -61,7 +61,7 @@ html {
 }
 
 .fundo-1 {
-  background-image: url(/img/gold3.jpg);
+  background-image: url(../img/bg-top-mobile.png);
   background-size: cover;
   position: relative;
 }
@@ -83,7 +83,7 @@ html {
 /* ------------- font infos about me ------------- */
 
 .fundo2 {
-  background-image: url(/img/background2-3.jpeg);
+  background-image: url(../img/background-mobile.png);
   padding-bottom: 15vh;
 }
 
