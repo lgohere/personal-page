@@ -31,6 +31,24 @@ html {
   display: none;
 }
 
+.arrows {
+  position: relative;
+}
+
+.leftArrow {
+  position: relative;
+  width: 2.5rem;
+  float: left;
+  z-index: 3;
+}
+
+.rightArrow {
+  position: relative;
+  width: 2.5rem;
+  float: right;
+  z-index: 3;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -142,9 +160,9 @@ p {
 
 /* ------------- effects ------------- */
 
-.fade-in {
-  -webkit-animation: fade-in 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
-  animation: fade-in 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+.fadein {
+  -webkit-animation: fade-in 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  animation: fade-in 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
 }
 
 @-webkit-keyframes fade-in {
@@ -164,7 +182,7 @@ p {
   }
 }
 
-.fade-out {
+.fadeout {
   -webkit-animation: fade-out 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: fade-out 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }

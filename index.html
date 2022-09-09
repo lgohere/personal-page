@@ -78,89 +78,27 @@
 
     <!---------------------------- INFOS  ---------------------------->
     
-    <div class="container-fluid pt-3 fundo2 text-center align-content-center" id="box">
-      <div class="row py-5">
-        <div class=" col-12 pt-5 pb-3">
-          <h3><span class="ft-topic">Who’s Luiz Gouveia?</span></h3>
-        </div>    
-      </div>  
-      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
-        <div class="col-12 p-4">
-          <img src="./img/sunset.png" alt="santos" width="50" class="float-left mx-3 mt-4">
-          <p>
-              Born and raised in Santos, a city along the coast of Sao Paulo
-              state, Luiz Gouveia is a 32 years old Brazilian man, father of a boy
-              called Liam.
-              <img src="./img/baby-boy.png" alt="baby-liam" width="50" class="float-right m-2">
-          </p>
-        </div>
-      </div>
-      <!-- <button id="boxBtn" class="btn btn-dark float-right mt-3 px-3">></button>
+    <!-- SLIDE 1-->
+    <div id="top-slides"></div>
+    <div class="container-fluid fundo2 text-center align-content-center" id="slides">
+
+
     </div>
     <div class="container-fluid">
       <div class="row">
-          <img src="./img/cave.png" alt="cave-line" class="cave" />
-          </div>
-    </div>  -->
-      <div class="row py-5">
-        <div class=" col-12 pt-5 pb-3">
-          <h3><span class="ft-topic">From Law to Programming</span></h3>
-        </div>    
-      </div>  
-      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
-        <div class="col-12 p-4 text-center">
-          <p>
-            Having attended 3 years in law studies, Luiz was rewarded with a
-            scholarship due to his grades and performance along the course.
-          </p>
-          <span class="d-flex"><img src="./img/scholarship.png" class="mx-auto my-3 mb-5" width="60"></span>
-          <p>
-            Later on, coming across the evident lack of job oportunites in the
-            sector as well as high number of graduated people who are
-            unemployed, decided to take a leave of absence from college.
-          </p>
+        <img src="./img/cave.png" alt="cave-line" class="cave" />
         </div>
-      </div>
-      <div class="row py-5">
-        <div class=" col-12 pt-5 pb-3">
-          <h3><span class="ft-topic">Goals playing as Front End Developer</span></h3>
+    </div>
+
+    <!---------------- CONTACT + PORTFOLIO  ---------------->
+
+    <div class="container-fluid pt-3 fundo2 text-center align-content-center" id="box">
+      <div class="row pt-3">
+        <div class=" col-12">
+          <h3 class="text-center my-5"><span class="ft-topic">Get in Touch!</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
-        <div class="col-12 p-4">
-          <p>
-            Luiz has a clear goal... 
-            <br>
-            Aims to achieve a developer full-stack's
-            skill level. 
-            Has been working on this through hand-on, daily.
-          </p>
-          <span class="d-flex"><img src="./img/full-stack.png" class="mx-auto my-3 mb-5" width="70"></span>
-        
-          <p>
-            His main focus is on generating value to borrower services through
-            his hard and soft skills. Althought considering himself an eternal
-            student, Luiz feels ready to face and solve problems as well as
-            aggregate energy to projects in which will be part of, a fact that
-            keeps his mindset opened and adjustable for new orientations and
-            teachings.
-          </p>
-          <span class="d-flex"><img src="./img/financial-profit.png" class="mx-auto my-3 mb-5" width="70"></span>
-        
-          <p>
-            Believes in his own potential, however knows that only facing real
-            challenges and delivering positives results from them will be able
-            to prove his liability and commitment to the company's goals and
-            principles.
-          </p>
-        </div>
-      </div>
-      <div class="row py-5">
-        <div class=" col-12 pt-5 pb-3">
-          <h3><span class="ft-topic">Get in Touch!</span></h3>
-        </div>    
-      </div>  
-      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
+      <div class="row fundotexto mx-auto col-sm-10 col-md-8 col-lg-6">
         <div class="col-12 p-4 d-flex justify-content-center">
           <p>
             📧 lgou90@gmail.com
@@ -169,12 +107,12 @@
           </p>
         </div>
       </div>
-      <div class="row py-5">
-        <div class=" col-12 pt-5 pb-3">
-          <h3><span class="ft-topic">Portfolio</span></h3>
+      <div class="row pt-3">
+        <div class=" col-12">
+          <h3 class="text-center my-5"><span class="ft-topic">Portfolio</span></h3>
         </div>    
       </div>  
-      <div class="row fundotexto py-4 px-2 mx-auto col-sm-10 col-md-8 col-lg-6">
+      <div class="row fundotexto mx-auto col-sm-10 col-md-8 col-lg-6">
         <div class="col-12 p-4 mb-5">
           <p class="text-center" style="font-size: 18pt">T&H BOLOS E SALGADOS</p>
           <p class="text-center">HTML | CSS | JS</p>
@@ -193,6 +131,8 @@
         </div>
       </div>
     </div> 
+
+
    <footer class="footer text-center text-white">  
       <!-- Copyright -->
       <div class="text-center p-5" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -202,6 +142,173 @@
       </div>
     </footer>
   </body>
-  <script> 
-  </script>  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  
+  <script>
+    const slide1 = new Vue({
+      template: `
+        <div v-show="fadeOut" class="fadein"> 
+          <div class="row pt-3">
+            <div class=" col-12 d-inline-flex justify-content-around align-items-center">
+              <a href="#top-slides">
+                <div class="arrows" @click="aparecerSlide3">
+                    <img src="./img/left-arrow.png" alt="left-arrow" class="leftArrow">
+                </div>
+              </a>    
+              <h3 class="text-center my-5"><span class="ft-topic">Who’s Luiz Gouveia?</span></h3>
+              <a href="#top-slides">
+                <div @click="aparecerSlide2" class="arrows">
+                  <img src="./img/right-arrow.png" alt="right-arrow" class="rightArrow">
+                </div>
+              </a>
+            </div>    
+            </div>     
+            <div class="row fundotexto mx-auto col-sm-10 col-md-8 col-lg-6">
+              <div class="col-12 p-3">
+                <img src="./img/sunset.png" alt="santos" width="50" class="float-left mx-3 mt-4">
+                <p>
+                  Born and raised in Santos, a city along the coast of Sao Paulo
+                  state, Luiz Gouveia is a 32 years old Brazilian man, father of a boy
+                  called Liam.
+                  <img src="./img/baby-boy.png" alt="baby-liam" width="50" class="float-right m-2">
+                </p>
+              </div>
+            </div>
+          </div>
+          `,
+      data: {
+        fadeOut: true,
+      },
+      methods: {
+        aparecerSlide2() {
+        slide2.fadeIn = true
+        this.fadeOut = false
+       },
+       aparecerSlide3() {
+        slide3.fadeIn = true
+        this.fadeOut = false
+       }
+      }
+    });
+    const slide2 = new Vue({
+      template: `
+        <div v-show="fadeIn" class="fadein">
+          <div class="row pt-3">
+            <div class="col-12 d-inline-flex justify-content-around align-items-center">
+              <a href="#top-slides">
+                <div class="arrows" @click="aparecerSlide1">
+                    <img src="./img/left-arrow.png" alt="left-arrow" class="leftArrow">
+                <div>  
+              </a>  
+              <h3 class="text-center my-5"><span class="ft-topic">From Law to Programming</span></h3>  
+              <a href="#top-slides">    
+                <div class="arrows" @click="aparecerSlide3">
+                    <img src="./img/right-arrow.png" alt="right-arrow" class="rightArrow">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row fundotexto mx-auto col-sm-10 col-md-8 col-lg-6">
+            <div class="col-12 p-3 text-center">
+              <p> 
+                Having attended 3 years in law studies, Luiz was rewarded with a
+                scholarship due to his grades and performance along the course.</p>
+                <span class="d-flex"><img src="./img/scholarship.png" class="mx-auto my-3 mb-5" width="60"></span>
+              <p> Later on, coming across the evident lack of job oportunites in the
+                sector as well as high number of graduated people who are
+                unemployed, decided to take a leave of absence from college.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        `,
+      data: {
+        fadeIn: false
+      },
+      methods: {
+        aparecerSlide3() {
+        slide3.fadeIn = true
+        this.fadeIn = false
+       },
+        aparecerSlide1() {
+        slide1.fadeOut = true
+        this.fadeIn = false
+       }
+      }
+    });
+    const slide3 = new Vue({
+      template: `
+      <div v-show="fadeIn" class="fadein">
+        <div class="row pt-3">
+          <div class=" col-12 d-inline-flex justify-content-around align-items-center">
+            <a href="#top-slides">
+                <div class="arrows" @click="aparecerSlide2">
+                  <img src="./img/left-arrow.png" alt="left-arrow" class="leftArrow">
+                </div>
+            </a>
+            <h3 class="text-center my-5"><span class="ft-topic">Goals playing as Front End Developer</span></h3>
+            <a href="#top-slides">
+                <div class="arrows" @click="aparecerSlide1">
+                  <img src="./img/right-arrow.png" alt="right-arrow" class="rightArrow">
+                </div>
+            </a>
+          </div>    
+        </div>  
+        <div class="row fundotexto mx-auto col-sm-10 col-md-8 col-lg-6">
+          <div class="col-12 p-3">
+            <p>
+            Luiz has a clear goal... 
+            <br>
+            Aims to achieve a developer full-stack's
+            skill level. 
+            Has been working on this through hand-on, daily.
+            </p>
+            <span class="d-flex"><img src="./img/full-stack.png" class="mx-auto my-3 mb-5" width="70"></span>
+        
+            <p>
+            His main focus is on generating value to borrower services through
+            his hard and soft skills. Althought considering himself an eternal
+            student, Luiz feels ready to face and solve problems as well as
+            aggregate energy to projects in which will be part of, a fact that
+            keeps his mindset opened and adjustable for new orientations and
+            teachings.
+            </p>
+            <span class="d-flex"><img src="./img/financial-profit.png" class="mx-auto my-3 mb-5" width="70"></span>
+        
+            <p>
+            Believes in his own potential, however knows that only facing real
+            challenges and delivering positives results from them will be able
+            to prove his liability and commitment to the company's goals and
+            principles.
+            </p>
+          </div>
+        </div>
+      </div>  
+      `,
+      data: {
+        fadeIn: false
+      },
+      methods: {
+        aparecerSlide1() {
+        slide1.fadeOut = true
+        this.fadeIn = false
+       },
+        aparecerSlide2() {
+        slide2.fadeIn = true
+        this.fadeIn = false
+       }
+      }
+    });
+    
+      slide1.$mount()
+      document.querySelector('#slides').appendChild(slide1.$el)
+      
+      slide2.$mount()
+      document.querySelector('#slides').appendChild(slide2.$el)
+
+      slide3.$mount()
+      document.querySelector('#slides').appendChild(slide3.$el)
+  </script>
+ 
 </html>
