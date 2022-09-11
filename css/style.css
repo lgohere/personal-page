@@ -86,7 +86,7 @@ body {
 }
 
 .luizgouveia {
-  font-size: 66pt;
+  font-size: 60pt;
   text-shadow: 1px 2px 0px #000000;
   color: rgb(255 215 157);
   font-family: HighSpirited;
@@ -127,6 +127,7 @@ body {
 .fundo2 {
   background-image: url(../img/background-mobile.png);
   padding-bottom: 15vh;
+  background-position-y: center;
 }
 
 .ft-topic {
@@ -295,8 +296,23 @@ p {
     display: none;
   }
 
+  #box .fundo1-b {
+    background-image: none;
+  }
+
+  .fundo3 {
+    background-image: url(../img/gold-bottom.jpg);
+    padding-bottom: 15vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ft-2 {
+    font-size: 3.4rem;
+  }
+
   #facepic {
-    max-width: 90%;
+    max-width: 28vh;
   }
 
   #show-ct {
@@ -305,7 +321,7 @@ p {
 
   .luizgouveia {
     word-spacing: -18pt;
-    top: -1vh;
+    top: 1vh;
   }
 
   .ft-1 {
@@ -321,37 +337,45 @@ p {
   .ft-1 {
     font-size: 2rem;
   }
+
+  .ft-2 {
+    font-size: 3.9rem;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   #facepic {
-    max-width: 70%;
+    max-width: 33vh;
   }
 
   .ft-1 {
     font-size: 2rem;
   }
+
+  .ft-2 {
+    font-size: 4.5rem;
+  }
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 1200px) {
   #text-wide {
     max-width: 60vh;
   }
 
   .ft-welcome-lg {
+    font-size: 3rem;
+  }
+
+  .ft-2 {
     font-size: 5rem;
   }
 
   .ft-1 {
-    font-size: 2.8rem;
-  }
-
-  #facepic {
-    max-width: 50%;
+    font-size: 2.3rem;
   }
 
   .luizgouveia {
-    font-size: 7rem;
+    font-size: 6.5rem;
   }
 }
 
@@ -359,5 +383,9 @@ p {
   #text-wide {
     margin-bottom: 2vh;
     position: relative;
+  }
+
+  .ft-2 {
+    font-size: 5.2rem;
   }
 }
