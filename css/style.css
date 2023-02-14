@@ -35,6 +35,11 @@ a:link {
   color: #f9ffaa;
 }
 
+#trot-icon:hover {
+  opacity: 50%;
+  filter: drop-shadow(2px 1px 2px white);
+}
+
 .arrows {
   position: relative;
 }
